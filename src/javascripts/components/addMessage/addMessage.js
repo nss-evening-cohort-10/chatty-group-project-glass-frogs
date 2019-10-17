@@ -1,4 +1,3 @@
-import utilities from '../../helpers/utilities';
 import messagesArr from '../../helpers/data/messages';
 
 const newMessageObject = () => {
@@ -11,20 +10,7 @@ const newMessageObject = () => {
 // time stamp -- you should be able to grab that somehow fancy
 // id incrimenting from whatever the last number is -- adding one each time
   const message = messagesArr.getMessages();
-  message.push(`{ sender: 'User', image: '', messageContent: 'inputvalue',timeStamp: '', id: '${message.id}', },`);
+  message.push(`{ sender: 'User', image: '', messageContent: 'inputvalue', timeStamp: '', id: '${message.id}', },`);
 };
 
-const displayNewMessageCard = () => {
-  const messages = messagesArr.getMessages();
-  let domString = '';
-  messages.forEach((message) => {
-    domString += '<div class="container">';
-    domString += `<img src="${messages.image}" alt="Photo"`;
-    domString += `<p>${messages.message}</p>`;
-    domString += `<span class="time-right">${message.time}</span>`;
-    domString += '</div>';
-    utilities.printToDom('messages-zone', domString);
-  });
-};
-
-export default { displayNewMessageCard, newMessageObject };
+export default { newMessageObject };
