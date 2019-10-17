@@ -1,17 +1,20 @@
 import utilities from '../../helpers/utilities';
-import messages from '../../helpers/data/messages';
+import mes from '../../helpers/data/messages';
 
 const displayMessageCard = () => {
-    const messages = messages.getMessages();
-    const domString = '';
-    messages.forEach((message)) => {
-        domString += `<div class="container">`;
-        domString += `<img src="${messages.image}" alt="Photo"`;
-        domString += `<p>${messages.message}</p>`;
-        domString += `<span class="time-right">${message.time}</span>`;
-        domString += `</div>`;
-    };
-    utilities.printToDom('messages-zone', domString);
+  const messages = mes.getMessages();
+  let domString = '';
+  // messages.forEach((message)) => {
+  for (let i = 0; i < messages.length; i += 1) {
+    domString += `
+    <div class="card-container">
+    <img src="${messages.image}" alt="Photo">
+    <p>${messages.messageContent}</p>
+    <span class="time-right">${messages.timeStamp}</span>
+    </div>
+    `;
+  }
+  utilities.printToDom('messages-zone', domString);
 };
 
 export default { displayMessageCard };
