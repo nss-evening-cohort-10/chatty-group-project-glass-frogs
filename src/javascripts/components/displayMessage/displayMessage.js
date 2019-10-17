@@ -8,9 +8,10 @@ const displayMessageCard = () => {
   for (let i = 0; i < messages.length; i += 1) {
     domString += `
     <div class="card-container">
-    <img src="${messages.image}" alt="Photo">
-    <p>${messages.messageContent}</p>
-    <span class="time-right">${messages.timeStamp}</span>
+    <h5>From:${messages[i].sender}</h5>
+    <img src="${messages[i].image}" alt="Photo">
+    <p>${messages[i].messageContent}</p>
+    <span class="time-right">${messages[i].timeStamp}</span>
     </div>
     `;
   }
