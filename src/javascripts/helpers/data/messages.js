@@ -35,3 +35,7 @@ const messages = [
     id: 5,
   },
 ];
+
+const getMessages = () => messages;
+
+export default { getMessages };
