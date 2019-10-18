@@ -1,3 +1,4 @@
+import './displayMessage.scss';
 import utilities from '../../helpers/utilities';
 import mes from '../../helpers/data/messages';
 
@@ -6,14 +7,25 @@ const displayMessageCard = () => {
   let domString = '';
   // messages.forEach((message)) => {
   for (let i = 0; i < messages.length; i += 1) {
-    domString += `
+    if (messages[i].id % 2 === 0) {
+      domString += `
     <div class="card-container">
-    <h5>From:${messages[i].sender}</h5>
+    <h5>${messages[i].sender}</h5>
     <img src="${messages[i].image}" alt="Photo">
     <p>${messages[i].messageContent}</p>
     <span class="time-right">${messages[i].timeStamp}</span>
     </div>
     `;
+    } else {
+      domString += `
+        <div class="card-container-darker">
+        <h5 align="right">${messages[i].sender}</h5>
+        <img src="${messages[i].image}" alt="Photo" class="right">
+        <p align="right">${messages[i].messageContent}</p>
+        <span class="time-left">${messages[i].timeStamp}</span>
+        </div>
+        `;
+    }
   }
   utilities.printToDom('messages-zone', domString);
 };
