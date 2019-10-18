@@ -1,7 +1,7 @@
 const messages = [
   {
     userName: 'John',
-    userIcon: 'src/assets/images/johnjohnson.jpg',
+    userIcon: 'src/assets/images/john.jpg',
     messageContent: 'Hello World!',
     timeStamp: 'October 16, 2019 8:00pm',
     messageId: 1,
