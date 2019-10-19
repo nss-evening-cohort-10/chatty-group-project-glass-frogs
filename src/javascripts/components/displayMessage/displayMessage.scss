@@ -1,34 +1,42 @@
 /* Chat containers */
+* {
+  margin: 0px;
+  padding: 0px;
+}
 
 #messages-zone{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    overflow-y: auto;
 }
 .card-container {
     background-color: #4db6ac;
     border-radius: 25px;
-    height: 100px;
+    height: 90px;
     margin: 1rem;
-    width: 99%;
+    width: 50%;
     padding: 15px;
-    border: solid 1px white;;
+    border: solid 1px white;
 }
 
 .card-container-darker{
     background-color: #2b9186;
     border-radius: 25px;
-    height: 100px;
+    height: 90px;
     margin: 1rem;
-    width: 99%;
+    width: 50%;
     padding: 15px;
-    border: solid 1px white;;
+    border: solid 1px white;
+}
+#odd {
+  float: left;
 }
 
   /* Style images */
 .container img {
     float: left;
-    max-width: 60px;
+    max-width: 40px;
     width: 100%;
     margin-right: 20px;
     border-radius: 50%;
