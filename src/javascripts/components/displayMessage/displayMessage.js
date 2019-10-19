@@ -10,8 +10,8 @@ const displayMessageCard = () => {
     if (messages[i].id % 2 === 0) {
       domString += `
     <div class="card-container">
-    <h5>${messages[i].sender}</h5>
-    <img src="${messages[i].image}" alt="Photo">
+    <h5>${messages[i].userName}</h5>
+    <img src="${messages[i].userIcon}" alt="Photo">
     <p>${messages[i].messageContent}</p>
     <span class="time-right">${messages[i].timeStamp}</span>
     </div>
@@ -19,8 +19,8 @@ const displayMessageCard = () => {
     } else {
       domString += `
         <div class="card-container-darker">
-        <h5 align="right">${messages[i].sender}</h5>
-        <img src="${messages[i].image}" alt="Photo" class="right">
+        <h5 align="right">${messages[i].userName}</h5>
+        <img src="${messages[i].userIcon}" class="right" alt="Photo">
         <p align="right">${messages[i].messageContent}</p>
         <span class="time-left">${messages[i].timeStamp}</span>
         </div>

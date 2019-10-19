@@ -4,9 +4,8 @@ import $ from 'jquery';
 import displayMessage from './components/displayMessage/displayMessage';
 
 const init = () => {
-  $('#exampleFormControlTextarea1').append(moment().format('LLL'));
-   displayMessage.displayMessageCard();
-
+  $('').append(moment().format('LLL'));
+  displayMessage.displayMessageCard();
 };
 
 init();
