@@ -7,7 +7,7 @@ const displayMessageCard = (arr) => {
   for (let i = 0; i < arr.length; i += 1) {
     if (arr[i].id % 2 === 0) {
       domString += `
-    <div class="card-container">
+    <div class="card-container" id="${arr[i].id}">
     <h5>${arr[i].userName}</h5>
     <img src="${arr[i].userIcon}" alt="Photo">
     <p>${arr[i].messageContent}</p>
@@ -16,7 +16,7 @@ const displayMessageCard = (arr) => {
     `;
     } else {
       domString += `
-        <div class="card-container-darker">
+        <div class="card-container-darker" id="${arr[i].id}">
         <h5 align="right">${arr[i].userName}</h5>
         <img src="${arr[i].userIcon}" alt="Photo" class="right">
         <p align="right">${arr[i].messageContent}</p>
