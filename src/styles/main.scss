@@ -18,6 +18,17 @@ footer {
   padding: 0px 170px;
 }
 
+.move {
+  display: flex;
+  justify-content: space-around;
+}
+
+#inputContainer {
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+}
+
 /* The switch - the box around the slider */
 .switch {
   position: relative;
