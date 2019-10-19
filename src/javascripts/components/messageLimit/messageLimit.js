@@ -14,15 +14,3 @@ const messageLimit = () => {
 };
 
 export default { messageLimit };
-
-// document.body.addEventListener('click', (event) => {
-//   if (event.target.id === 'deleteButton') {
-//       const buttonValue = event.target.value;
-//       const cardId = `card-${buttonValue}`;
-//       const card = document.getElementById(cardId);
-//       card.parentNode.removeChild(card);
-//   }
-//   if (event.target.id === 'newButton') {
-//       randomHouse(houses);
-//   }
-// });
