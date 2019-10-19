@@ -8,7 +8,7 @@ const messages = [
   },
   {
     userName: 'Kenneth',
-    userIcon: '',
+    userIcon: 'src/assets/images/kenny.jpg',
     messageContent: 'I love my music!',
     timeStamp: 'October 16, 2019 8:01',
     id: '2',
