@@ -5,44 +5,49 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Test</title>
+  <script src="https://kit.fontawesome.com/1c3c2830bd.js" crossorigin="anonymous"></script>
+  <title>Chatty App</title>
 </head>
 
-<body>
-  <!-- Image and text -->
-<nav class="navbar sticky-top navbar-light bg-primary row justify-content-md-center">
-    <a class="navbar-brand" href="#">
-      <img src="./images/chatterLogo.png" width="80" height="80" class="d-inline-block align-top" alt="">
-      <span class="navbar-brand mb-0 h1">Chatter Message App</span>
-    </a>
-  </nav>
-</div>
 
-  
- 
+<body class="container">
+
+    <div class="jumbotron jumbotron-fluid sticky-top">
+        <div class="container">
+          <h1 class="display-4">CHATTER</h1>
+          <p class="lead">TALK TO ANYONE ANYWHERE.</p>
+        </div>
+      </div>
+
+
+<div>
   <div class="container">
-  <div id="messages-zone">hi</div>
-  <form class="container" id="add-message">
-    <div>
-      <textarea class="form-control col-6" id="exampleFormControlTextarea1" placeholder="Enter message here" rows="3"></textarea>
-    </div>
-    <div>
-      <button class="btn btn-light" id="send-button">Send</button>
-    </div>
-  </form>
-</div>
+    <div id="messages-zone"></div>
+    <form class="container" id="add-message">
+      <div>
+        <textarea class="form-control col-6" id="exampleFormControlTextarea1" placeholder="Enter message here" rows="3"></textarea>
+      </div>
+      <div>
+        <button class="btn btn-light" id="send-button">Send</button>
+      </div>
+    </form>
+  </div>
+</div> 
 
-<footer class="footer row sticky-bottom  bg-danger justify-content-md-center">
-  <a class="navbar-brand" href="#"></a>
-    <div class=footer-items>
-        <radio class="btn btn-secondary">
-            <input type="radio" name="options" id="option2" autocomplete="off"> Dark Mode
-          </radio>
-          <radio class="btn btn-secondary">
-              <input type="radio" name="options" id="option2" autocomplete="off"> Large Text
-            </radio>
-      <button class="btn btn-secondary">Clear All</button>
-    </footer>
+
+<footer class="footer footer row fixed-bottom justify-content-md-center">
+      <a class="navbar-brand" href="#"></a>
+        <div class=footer-items>
+            <radio class="btn btn-secondary">
+                <input type="radio" name="options" id="option2" autocomplete="off"> Dark Mode
+              </radio>
+              <radio class="btn btn-secondary">
+                  <input type="radio" name="options" id="option2" autocomplete="off"> Large Text
+                </radio>
+          <button class="btn btn-secondary">Clear All</button>
+  
+        </div>
+    </footer>
   
 </body>
 
