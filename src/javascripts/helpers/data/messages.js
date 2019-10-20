@@ -1,4 +1,4 @@
-const messages = [
+let messages = [
   {
     userName: 'John',
     userIcon: 'src/assets/images/johnjohnson.jpg',
@@ -37,5 +37,8 @@ const messages = [
 ];
 
 const getMessages = () => messages;
+const newMessages = (newArray) => {
+  messages = newArray;
+};
 
-export default { getMessages };
+export default { getMessages, newMessages };

@@ -31,13 +31,20 @@
 }
 #odd {
   float: left;
-  margin-top: 0px;
+}
+
+h5 {
+  margin: 0px;
+} 
+
+.message {
+  margin-bottom: 5px;
 }
 
   /* Style images */
 .container img {
     float: left;
-    max-width: 40px;
+    max-width: 30px;
     width: 100%;
     margin-right: 20px;
     border-radius: 50%;
@@ -49,19 +56,21 @@
     margin-left: 20px;
     margin-right:0;
   }
-  
+ span {
+   display: inline-block;
+ } 
 
   /* Style time text */
 .time-right {
     float: right;
-    color: #aaa;
-    margin-top: -30px;
+    color: black;
+    margin-top: -10px;
   }
   
   /* Style time text */
   .time-left {
     float: left;
-    color: #999;
-    margin-top: -30px;
+    color: black;
+    margin-top: -10px;
   }
   
