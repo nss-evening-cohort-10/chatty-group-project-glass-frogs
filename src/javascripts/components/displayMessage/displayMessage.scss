@@ -11,7 +11,7 @@
     overflow-y: auto;
 }
 .card-container {
-    background-color: #4db6ac;
+    background-color: #2CC0B3;
     border-radius: 25px;
     height: 90px;
     margin: 1rem;
@@ -20,7 +20,7 @@
 }
 
 .card-container-darker{
-    background-color: #2b9186;
+    background-color: #38595E;
     border-radius: 25px;
     height: 90px;
     margin: 1rem;
@@ -34,6 +34,7 @@
 
 h5 {
   margin: 0px;
+  color: #F4733D;
 } 
 
 .message {
@@ -55,21 +56,22 @@ h5 {
     margin-left: 20px;
     margin-right:0;
   }
- span {
+
+   span {
    display: inline-block;
  } 
 
   /* Style time text */
 .time-right {
     float: right;
-    color: black;
+    color: #38595E;
     margin-top: -10px;
   }
   
   /* Style time text */
   .time-left {
     float: left;
-    color: black;
+    color: #2CC0B3;
     margin-top: -10px;
   }
   
