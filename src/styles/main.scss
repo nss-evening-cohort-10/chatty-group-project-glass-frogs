@@ -1,23 +1,8 @@
 @import "~bootstrap/scss/bootstrap";
 
-
-.jumbotron {
-background-color: #badcff;
-color: white;
-text-align: center;
-border-radius: 25px 25px 0px 0px;
-opacity: 70;
-
-
+.main-container {
+  background-color: lightgray;
 }
-
-footer {
-  background-color: #badcff;
-  border-radius: 0px 0px 25px 25px;
-  margin: 15px;
-  padding: 0px 170px;
-}
-
 .move {
   display: flex;
   justify-content: space-around;
