@@ -4,6 +4,8 @@ import displayMessage from './components/displayMessage/displayMessage';
 import message from './helpers/data/messages';
 import limit from './components/messageLimit/messageLimit';
 import deleteMessage from './components/deleteMessages/deleteMessages';
+import clear from './components/clearMessages/clearMessages';
+
 
 const messages = message.getMessages();
 
@@ -13,6 +15,7 @@ const init = () => {
   limit.messageLimit();
   deleteMessage.deleteMessage();
   displayMessage.messageEventListeners();
+  clear.addClearMessageEvent();
 };
 
 init();

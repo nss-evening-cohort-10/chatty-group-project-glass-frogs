@@ -1,8 +1,8 @@
 import $ from 'jquery';
 
 const deleteMessage = () => {
-  $('body').on('click', '.close', () => {
-    $('.card-container').remove('');
+  $('.close').on('click', (event) => {
+    $(event.target).parent('.delete').remove();
   });
 };
 
