@@ -1,4 +1,5 @@
 import moment from 'moment';
+import $ from 'jquery';
 import './displayMessage.scss';
 import utilities from '../../helpers/utilities';
 
@@ -34,4 +35,12 @@ const displayMessageCard = (arr) => {
   utilities.printToDom('messages-zone', domString);
 };
 
-export default { displayMessageCard };
+const clearMessages = () => {
+  $('#messages-zone').empty();
+};
+
+const messageEventListeners = () => {
+  $('#clearAll').click(clearMessages);
+};
+
+export default { displayMessageCard, messageEventListeners };
