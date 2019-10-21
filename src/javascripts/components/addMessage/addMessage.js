@@ -10,7 +10,9 @@ const addEvent = () => {
     const message = messagesArr.getMessages();
     const inputVal = $('textarea').val();
     message.push({
-      userName: 'User', userIcon: '', messageContent: inputVal, id: `${i}`,
+      userName: 'User',
+      messageContent: inputVal,
+      id: `${i}`,
     });
     i += 1;
     displayMessage.displayMessageCard(message);
