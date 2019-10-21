@@ -4,4 +4,12 @@ const printToDom = (divId, toPrint) => {
   $(`#${divId}`).html(toPrint);
 };
 
-export default { printToDom };
+const toggleClearAllButton = () => {
+  if ($('#messages-zone').val() === '') {
+    $('#clearAll').prop('disabled', 'disabled');
+  } else {
+    $('#clearAll').prop('disabled', false);
+  }
+};
+
+export default { printToDom, toggleClearAllButton };

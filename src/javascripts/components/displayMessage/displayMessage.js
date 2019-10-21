@@ -10,7 +10,7 @@ const displayMessageCard = (arr) => {
     if (arr[i].id % 2 === 0) {
       domString += `
 
-    <div class="card-container" id="${arr[i].id}">
+    <div class="card-container delete" id="${arr[i].id}">
     <button id="even" class="close d-flex justify-content-end">x</button>
     <h5>${arr[i].userName}</h5>
     <img src="${arr[i].userIcon}" alt="Photo">
@@ -21,7 +21,7 @@ const displayMessageCard = (arr) => {
     `;
     } else {
       domString += `
-        <div class="card-container-darker" id="${arr[i].id}">
+        <div class="card-container-darker delete" id="${arr[i].id}">
         <button id="odd" class="close d-flex justify-content-start">x</button>
         <h5 align="right">${arr[i].userName}</h5>
         <img src="${arr[i].userIcon}" alt="Photo" class="right">
