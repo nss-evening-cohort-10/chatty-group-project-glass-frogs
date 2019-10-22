@@ -17,7 +17,6 @@ const emojis = [
 
 const emojiInput = () => {
   $('#send-button').on('click', () => {
-    console.error(emojis[0].emoji);
     $("p:contains('smile')").replaceWith(emojis[0].emoji);
     $("p:contains('sad')").replaceWith(emojis[1].emoji);
   });
