@@ -12,6 +12,7 @@ const addEvent = () => {
     const inputVal = $('textarea').val();
     message.push({
       userName: 'User',
+      userIcon: '',
       messageContent: inputVal,
       id: `${i}`,
     });
