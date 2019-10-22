@@ -1,15 +1,11 @@
 /* Chat containers */
-* {
-  margin: 0px;
-  padding: 0px;
+#messages-zone{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  overflow-y: scroll;
 }
 
-#messages-zone{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    overflow-y: auto;
-}
 .card-container {
     background-color: #2CC0B3;
     border-radius: 25px;
@@ -20,7 +16,7 @@
 }
 
 .card-container-darker{
-    background-color: #38595E;
+    background-color: #00897b;
     border-radius: 25px;
     height: 100%;
     margin: 1rem;

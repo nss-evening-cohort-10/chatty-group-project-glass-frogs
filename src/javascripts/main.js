@@ -6,7 +6,9 @@ import limit from './components/messageLimit/messageLimit';
 import deleteMessage from './components/deleteMessages/deleteMessages';
 import clear from './components/clearMessages/clearMessages';
 import largerText from './components/largerText/largerText';
+import darkMode from './components/darkMode/darkMode';
 import emojis from './components/emojis/emojis';
+
 
 
 const messages = message.getMessages();
@@ -20,6 +22,7 @@ const init = () => {
   displayMessage.messageEventListeners();
   clear.addClearMessageEvent();
   largerText.enlarge();
+  darkMode.makeDark();
 };
 
 init();

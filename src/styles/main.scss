@@ -1,19 +1,32 @@
 @import "~bootstrap/scss/bootstrap";
+@import './themes.scss';
 
-body {
-  height: 6000px;
+// THEME MAPS
+main, html {
+  @include themify($themes) {
+      color: themed('textColor');  
+      background-color: themed('backgroundColor');
+      
+  }
 }
 
-.main-container {
-  background-color: rgb(198, 198, 198);
+nav {
+  @include themify($themes) {
+      color: themed('navTextColor');  
+      background-color: themed('navColor');
+      
+  }
 }
 
-.display-4 {
-  color: #2CC0B3;
+#inputContainer {
+  @include themify($themes) {
+      background-color: themed('inputBoxColor');
+      
+  }
 }
 
-.lead {
-  color: #2CC0B3;
+body{
+  height: 1000px; 
 }
 
 .move {
@@ -21,19 +34,13 @@ body {
   justify-content: space-around;
 }
 
-#messageArea {
-  background-color: #2CC0B3;
-}
-
-#send-button {
-  color: #F4733D;
-}
-
 #inputContainer {
   display: flex;
   justify-content: center;
-  margin: 10px;
+  padding:15px;
+
 }
+
 
 /* The switch - the box around the slider */
 .switch {
@@ -98,18 +105,34 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
+#add-message {
+  display: inline-block;
+  width: 100%;
+  justify-content: center;
+}
 nav {
-  background-color: #38595E;
+  background-color: whitesmoke;
+  padding: -7px;
+  margin:0px;
 }
 
-.clear {
-  color:  #2CC0B3;
+#footer {
+  flex: 0 0 50px;
+  margin-top: auto;
+  position: static;
 }
 
-.dark {
-  color: #2CC0B3;
+
+body.theme-dark {
+  background-color: #0c3336;
+  height: 1000px;
 }
 
-.large {
-  color: #2CC0B3;
+.card-container, .card-container-darker {
+  margin-bottom: 300px;
+  height: 1000px;
+}
+
+#messages-zone {
+  margin-bottom: 182px;
 }
