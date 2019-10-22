@@ -10,6 +10,7 @@
 </head>
 
 <body class="main-container">
+  <main id="app-root" class="theme-light">
   <nav class="navbar sticky-top">
     <h1 class="display-4">CHATTER</h1>
     <p class="lead">TALK TO ANYONE ANYWHERE.</p>
@@ -17,23 +18,30 @@
   <div>
     <div class="container">
       <div id="messages-zone"></div>
-        <form class="container" id="add-message">
-          <div id="inputContainer">
-            <textarea class="form-control col-5 centerTextArea" id="messageArea" placeholder="Enter message here" rows="2" cols="10"></textarea>
-            <button class="btn btn-dark" id="send-button">Send</button>
-          </div>
-        </form>
       </div>
   </div>
-</div> 
 
-<nav class="navbar footer justify-content md-center fixed-bottom">
+<footer class="fixed-bottom">
+<div>
+  <form class="message-container" id="add-message">
+    <div id="inputContainer">
+      <textarea class="form-control col-5 centerTextArea" id="messageArea" placeholder="Enter message here" rows="2" cols="10"></textarea>
+      <button class="btn btn-dark" id="send-button">Send</button>
+    </div>
+  </form>
+</div>
+
+<nav class="navbar footer justify-content md-center">
         <a class="navbar-brand" href="#"></a>
           <div class="footer-items move">
-          <h3></h3>
+          <h3>hi</h3>
+
+        
+
+
           <p>Dark Mode</p>
           <label class="switch">
-            <input type="checkbox">
+            <input id="dark-mode" type="checkbox">
               <span class="slider round"></span> 
             </label>    
             <p>Larger Text</p>
@@ -44,6 +52,8 @@
             <button id="clearAll" class="btn clear btn-dark">Clear All</button>
           </div>
       </nav>
+  </footer>
+  </main>
   </body>
   
   </html>

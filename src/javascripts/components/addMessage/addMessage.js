@@ -12,6 +12,7 @@ const addEvent = () => {
     const inputVal = $('textarea').val();
     message.push({
       userName: 'User',
+      userIcon: 'https://qodebrisbane.com/wp-content/uploads/2019/07/This-is-not-a-person-2-1.jpeg',
       messageContent: inputVal,
       id: `${i}`,
     });
