@@ -5,10 +5,10 @@ const printToDom = (divId, toPrint) => {
 };
 
 const toggleClearAllButton = () => {
-  if ($('#messages-zone').val() === '') {
-    $('#clearAll').prop('disabled', 'disabled');
-  } else {
+  if ($('#messages-zone').val() !== '') {
     $('#clearAll').prop('disabled', false);
+  } else {
+    $('#clearAll').prop('disabled', true);
   }
 };
 

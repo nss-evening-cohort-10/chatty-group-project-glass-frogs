@@ -14,7 +14,7 @@ const displayMessageCard = (arr) => {
     <button id="even" class="close d-flex justify-content-end">x</button>
     <h5>${arr[i].userName}</h5>
     <img src="${arr[i].userIcon}" alt="Photo">
-    <p class="message">${arr[i].messageContent}</p>
+    <p class="message" id="message-text">${arr[i].messageContent}</p>
     <span class="time-right">${moment().format('LLL')}</span>
     
     </div>
@@ -25,7 +25,7 @@ const displayMessageCard = (arr) => {
         <button id="odd" class="close d-flex justify-content-start">x</button>
         <h5 align="right">${arr[i].userName}</h5>
         <img src="${arr[i].userIcon}" alt="Photo" class="right">
-        <p class="message "align="right">${arr[i].messageContent}</p>
+        <p class="message" align="right">${arr[i].messageContent}</p>
         <span class="time-left">${moment().format('LLL')}</span>
         
         </div>
