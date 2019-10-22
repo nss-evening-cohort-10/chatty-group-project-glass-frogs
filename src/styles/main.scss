@@ -2,7 +2,7 @@
 @import './themes.scss';
 
 // THEME MAPS
-main {
+main, html {
   @include themify($themes) {
       color: themed('textColor');  
       background-color: themed('backgroundColor');
@@ -26,8 +26,7 @@ nav {
 }
 
 body{
-  height: 2000px; 
-  background: fixed; 
+  height: 1000px; 
 }
 
 .move {
@@ -117,15 +116,22 @@ nav {
   margin:0px;
 }
 
-#messages-zone {
-  margin: 10px;
-  display:flex;
-}
-
-
 #footer {
-  flex: 0 0 50px;/*or just height:50px;*/
+  flex: 0 0 50px;
   margin-top: auto;
   position: static;
 }
 
+body.theme-dark {
+  background-color: #0c3336;
+  height: 1000px;
+}
+
+.card-container, .card-container-darker {
+  margin-bottom: 300px;
+  height: 1000px;
+}
+
+#messages-zone {
+  margin-bottom: 182px;
+}
