@@ -7,6 +7,8 @@ import deleteMessage from './components/deleteMessages/deleteMessages';
 import clear from './components/clearMessages/clearMessages';
 import largerText from './components/largerText/largerText';
 import darkMode from './components/darkMode/darkMode';
+import emojis from './components/emojis/emojis';
+
 
 
 const messages = message.getMessages();
@@ -14,6 +16,7 @@ const messages = message.getMessages();
 const init = () => {
   displayMessage.displayMessageCard(messages);
   newMessage.addEvent();
+  emojis.emojiInput();
   limit.messageLimit();
   deleteMessage.deleteMessage();
   displayMessage.messageEventListeners();

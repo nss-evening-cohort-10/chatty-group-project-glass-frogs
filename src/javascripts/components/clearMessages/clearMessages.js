@@ -14,7 +14,7 @@ const clearMessages = (e) => {
 };
 
 const addClearMessageEvent = () => {
-  $('body').on('click', '#clearAll', clearMessages);
+  $('#messages-zone').on('click', '#clearAll', clearMessages);
 };
 
 
