@@ -1,15 +1,33 @@
 @import "~bootstrap/scss/bootstrap";
-@import './themeMaps.scss';
+@import './themes.scss';
 
-// from main
-body {
-  height: 2000px;
-  background-color: white;
-
-  &.theme-dark{
-    background-color: black;
-    color: white;
+// THEME MAPS
+main {
+  @include themify($themes) {
+      color: themed('textColor');  
+      background-color: themed('backgroundColor');
+      
   }
+}
+
+nav {
+  @include themify($themes) {
+      color: themed('navTextColor');  
+      background-color: themed('navColor');
+      
+  }
+}
+
+#inputContainer {
+  @include themify($themes) {
+      background-color: themed('inputBoxColor');
+      
+  }
+}
+
+body{
+  height: 2000px; 
+  background: fixed; 
 }
 
 .move {
@@ -21,7 +39,7 @@ body {
   display: flex;
   justify-content: center;
   padding:15px;
-  background-color: white;
+
 }
 
 
@@ -110,3 +128,4 @@ nav {
   margin-top: auto;
   position: static;
 }
+

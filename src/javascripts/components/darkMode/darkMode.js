@@ -1,9 +1,7 @@
 import $ from 'jquery';
-import '../../../styles/themeMaps.scss';
-
 
 const darkMode = () => {
-  const root = $('#app-root');
+  const root = $('body');
   root.toggleClass('theme-light');
   root.toggleClass('theme-dark');
   // $('#app-root').toggleClass('theme-dark');
