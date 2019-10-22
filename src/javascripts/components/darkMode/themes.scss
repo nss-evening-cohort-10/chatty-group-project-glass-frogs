@@ -1,6 +1,8 @@
+@import '../../../styles/colors';
+
 $themes: (
   light: (
-    backgroundColor: #fff,
+    backgroundColor: $white,
     textColor: black,
     navbarColor: #c6c6c6,
     chatterColor: #004d40,
@@ -16,7 +18,7 @@ $themes: (
     
   ),
   dark: (
-    backgroundColor: #0c3336,
+    backgroundColor: $darkTeal,
     textColor: white,
     navbarColor: #212529,
     chatterColor:#2CC0B3,
