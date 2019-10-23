@@ -9,8 +9,6 @@ import largerText from './components/largerText/largerText';
 import darkMode from './components/darkMode/darkMode';
 import emojis from './components/emojis/emojis';
 
-
-
 const messages = message.getMessages();
 
 const init = () => {

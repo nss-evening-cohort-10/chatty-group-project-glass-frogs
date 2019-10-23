@@ -25,7 +25,7 @@ const displayMessageCard = (arr) => {
         <button id="odd" class="close d-flex justify-content-start">x</button>
         <h5 align="right">${arr[i].userName}</h5>
         <img src="${arr[i].userIcon}" alt="Photo" class="right">
-        <p class="message" "align="right">${arr[i].messageContent}</p>
+        <p class="message" align="right">${arr[i].messageContent}</p>
         <span class="time-left">${moment().format('LLL')}</span>
         
         </div>
